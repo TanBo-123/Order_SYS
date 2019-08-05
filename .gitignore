@@ -50,3 +50,57 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+
+
+import random
+import numpy as np
+#简单随机抽样
+data=np.loadtxt("E:/data/book/python_book/chapter3/data3.txt")
+# print(type(data))
+data_sample=random.sample(list(data),2000)#随机抽取2000个样本
+# print(data_sample[:2])#打印前两条数据
+# print(len(data_sample))#打印样本量
+
+#等距抽样
+data=np.loadtxt("E:/data/book/python_book/chapter3/data3.txt")
+sample_count=2000#指定抽样数
+record_count=data.shape[0]#最大样本数
+width=int(record_count/sample_count)
+data_sample=[]
+i=0
+while len(data_sample) <= sample_count and i*width <=record_count-1:
+    data_sample.append(data[i*width])#新增样本
+    i+=1
+# print(data_sample[:2])#打印前两条数据
+# print(len(data_sample))#打印样本量
+
+#分层抽样
+data2=np.loadtxt("E:/data/book/python_book/chapter3/data2.txt")
+each_sample_count=200 #定义每个分层的抽样数量
+label_data_unique=np.unique(data2[:,-1])#
+print(label_data_unique)
+sample_list=[]#存放临时分层数据
+sample_data=[]#存放最终抽样数据
+sample_dict={}#用来显示各分层样本数量
+for label_data in label_data_unique:
+    for data_tmp in data2:
+        if data_tmp[-1] == label_data:#如果数据最后一列为标签
+            sample_list.append(data_tmp)#
+    each_sample_data=random.sample(sample_list,each_sample_count)#对每层随机抽样
+    sample_data.extend(each_sample_data)#将抽样数据追加到分层数据里面
+    sample_dict[label_data]=len(each_sample_data)#样本统计结果
+# print(sample_dict)
+
+#整群抽样
+data3=np.loadtxt("E:/data/book/python_book/chapter3/data4.txt")
+label_data_unique=np.unique(data3[:,-1])#定义整群标签值域
+print(label_data_unique)
+sample_label=random.sample(list(label_data_unique),2)#随机抽取2个整群
+sample_data=[] #定义空列表，用来存储最终抽样数据
+for each_label in sample_label:
+    for data_tmp in data2:
+        if data_tmp[-1] == each_label:#如果数据最后一列为标签
+            sample_data.append(data_tmp)
+print(sample_label)
+print(sample_data)
