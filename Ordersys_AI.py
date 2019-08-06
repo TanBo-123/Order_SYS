@@ -3,25 +3,26 @@
 
 import openpyxl
 #import matplotlib.pyplot as plt
-#import numpy as np
+import numpy as np
 
 
 #用于matplotlib显示中文
 #plt.rcParams['font.sans-serif'] = ['SimHei']
 
 Contents_line = 1
-
+random_num = 80
 
 def Export_menu(menu,score,num):
     menu_len = len(menu)-1
     menu_list = []
-    temp = 0
+    random_list = np.random.randint(0,menu_len,menu_len*random_num)
     for menu_cell,score_cell in zip(menu[1:],score[1:]):
         menu_list.append([menu_cell.value,score_cell.value,0])
-    for i in range(menu_len):
-        menu_list[i] = [menu_list[i][0],temp,temp+menu_list[i][1]]
-        temp = menu_list[i][2]
-    print(menu_list,temp)
+    print(menu_list)
+    for i in range(len(random_list)):
+        menu_list[random_list[i]][2] += 1
+    print(menu_list)
+    print(menu_list[np.lexsort(menu_list.T)])
     pass
 
 
