@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd28ba01-c7ef-4f2f-8f3e-abfc2af4e58e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Ordersys_AI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ordersys_AI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/menu.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,15 +14,15 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Order_SYS$test_random2.coverage" NAME="test_random2 Coverage Results" MODIFIED="1565056977915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Order_SYS$test_random.coverage" NAME="test_random Coverage Results" MODIFIED="1565008100365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Order_SYS$Ordersys_AI.coverage" NAME="Ordersys_AI Coverage Results" MODIFIED="1565172214666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Order_SYS$Ordersys_AI.coverage" NAME="Ordersys_AI Coverage Results" MODIFIED="1565228689686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ordersys_AI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="242">
+              <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
               <folding>
                 <element signature="e#47#62#0" expanded="true" />
               </folding>
@@ -66,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="292" />
     <option name="y" value="24" />
     <option name="width" value="1400" />
@@ -206,12 +206,12 @@
       <updated>1564999929194</updated>
       <workItem from="1564999930609" duration="6689000" />
       <workItem from="1565061134540" duration="375000" />
-      <workItem from="1565085695101" duration="10532000" />
+      <workItem from="1565085695101" duration="15822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17596000" />
+    <option name="totallyTimeSpent" value="22886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -273,8 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ordersys_AI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="242">
+          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
           <folding>
             <element signature="e#47#62#0" expanded="true" />
           </folding>
