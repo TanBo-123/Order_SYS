@@ -13,12 +13,14 @@ Contents_line = 1
 random_num = 80
 
 def Export_menu(menu,score,num):
-    menu_len = len(menu)-1
     menu_list = []  #[菜品，评分，概率，选分]
-    random_list = np.random.randint(0,menu_len,menu_len*random_num)
     for menu_cell,score_cell in zip(menu[1:],score[1:]):
-        menu_list.append([menu_cell.value,score_cell.value,0,0])
-    #print(menu_list)
+        if menu_cell.value != None:
+            menu_list.append([menu_cell.value,score_cell.value,0,0])
+        else:break
+    menu_len = len(menu_list) - 1
+    random_list = np.random.randint(0, menu_len, menu_len * random_num)
+    print(menu_len,menu_list)
     for i in range(len(random_list)):
         menu_list[random_list[i]][2] += 1
     for i in range(menu_len):
