@@ -9,8 +9,10 @@ import numpy as np
 #用于matplotlib显示中文
 #plt.rcParams['font.sans-serif'] = ['SimHei']
 
-Contents_line = 1
-random_num = 80
+#Contents_line = 1
+RANDOM_NUM = 80
+PER_CAPITA_MAX = 17
+PER_CAPUTA_MIN = 13
 
 def Export_menu(menu,score,num):
     menu_list = []  #[菜品，评分，概率，选分]
@@ -19,7 +21,7 @@ def Export_menu(menu,score,num):
             menu_list.append([menu_cell.value,score_cell.value,0,0])
         else:break
     menu_len = len(menu_list) - 1
-    random_list = np.random.randint(0, menu_len, menu_len * random_num)
+    random_list = np.random.randint(0, menu_len, menu_len * RANDOM_NUM)
     print(menu_len,menu_list)
     for i in range(len(random_list)):
         menu_list[random_list[i]][2] += 1
@@ -33,7 +35,9 @@ def Export_menu(menu,score,num):
     #print(menu_temp,'\n'+'\n',menu_list)
     return [menu_temp.index(menu_list[i]) for i in range(num)]
 
-
+def Order_menu(people_num):
+    
+    pass
 
 fpath =  './menu.xlsx'
 wb = openpyxl.load_workbook(fpath)
